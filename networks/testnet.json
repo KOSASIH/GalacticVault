@@ -1,0 +1,26 @@
+// networks/testnet.json
+{
+  "chainId": 4,
+  "chainName": "Ethereum Ropsten Testnet",
+  "rpcUrl": "https://ropsten.infura.io/v3/YOUR_PROJECT_ID",
+  "wsUrl": "wss://ropsten.infura.io/ws/v3/YOUR_PROJECT_ID",
+  "explorerUrl": "https://ropsten.etherscan.io",
+  "gasPrice": 1, // in Gwei
+  "gasLimit": 100000, // in units
+  "tokenList": [
+    "ETH",
+    "DAI",
+    "USDC",
+    "OMNI" // OmniFusion token
+  ],
+  "contractAddresses": {
+    "BankingSystem": "0x...BankingSystemContractAddress...",
+    "CryptoGateway": "0x...CryptoGatewayContractAddress...",
+    "OmniFusionToken": "0x...OmniFusionTokenContractAddress..."
+  },
+  "abi": {
+    "BankingSystem": [...BankingSystemContractABI...],
+    "CryptoGateway": [...CryptoGatewayContractABI...],
+    "OmniFusionToken": [...OmniFusionTokenContractABI...]
+  }
+}
