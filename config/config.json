@@ -1,0 +1,26 @@
+{
+  "networks": {
+    "mainnet": {
+      "chainId": 1,
+      "rpcUrl": "https://mainnet.infura.io/v3/YOUR_PROJECT_ID"
+    },
+    "testnet": {
+      "chainId": 4,
+      "rpcUrl": "https://testnet.infura.io/v3/YOUR_PROJECT_ID"
+    }
+  },
+  "contracts": {
+    "BankingSystem": {
+      "address": "0x...BankingSystemContractAddress...",
+      "abi": [...BankingSystemContractABI...]
+    },
+    "CryptoGateway": {
+      "address": "0x...CryptoGatewayContractAddress...",
+      "abi": [...CryptoGatewayContractABI...]
+    },
+    "OmniFusionToken": {
+      "address": "0x...OmniFusionTokenContractAddress...",
+      "abi": [...OmniFusionTokenContractABI...]
+    }
+  }
+}
