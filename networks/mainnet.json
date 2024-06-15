@@ -1,0 +1,26 @@
+// networks/mainnet.json
+{
+  "chainId": 1,
+  "chainName": "Ethereum Mainnet",
+  "rpcUrl": "https://mainnet.infura.io/v3/YOUR_PROJECT_ID",
+  "wsUrl": "wss://mainnet.infura.io/ws/v3/YOUR_PROJECT_ID",
+  "explorerUrl": "https://etherscan.io",
+  "gasPrice": 20, // in Gwei
+  "gasLimit": 200000, // in units
+  "tokenList": [
+    "ETH",
+    "DAI",
+    "USDC",
+    "OMNI" // OmniFusion token
+  ],
+  "contractAddresses": {
+    "BankingSystem": "0x...BankingSystemContractAddress...",
+    "CryptoGateway": "0x...CryptoGatewayContractAddress...",
+    "OmniFusionToken": "0x...OmniFusionTokenContractAddress..."
+  },
+  "abi": {
+    "BankingSystem": [...BankingSystemContractABI...],
+    "CryptoGateway": [...CryptoGatewayContractABI...],
+    "OmniFusionToken": [...OmniFusionTokenContractABI...]
+  }
+}
