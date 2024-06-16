@@ -1,0 +1,9 @@
+# AI-related packages
+numpy
+opencv-python
+scikit-image
+scikit-learn
+transformers
+
+# Other packages
+pytest
