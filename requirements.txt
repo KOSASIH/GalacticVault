@@ -6,7 +6,7 @@ scikit-learn==1.0.1
 
 # Image processing libraries
 opencv-python==4.5.3.56
-pillow==8.3.1
+pillow==10.3.0
 
 # Natural language processing libraries
 nltk==3.6.2
