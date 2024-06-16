@@ -1,0 +1,5 @@
+# Hashicorp Vault
+type: hashicorp
+path_prefix: /my_galaxy_instance
+vault_address: http://localhost:8200
+vault_token: vault_application_token
