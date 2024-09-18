@@ -9,12 +9,22 @@ class MultiDimensionalSecurity {
         this.environmentalAnalysis = new EnvironmentalAnalysis();
     }
 
-    async authenticate(user) {
-        const biometricResult = await this.biometricAuth.authenticate(user);
-        const behavioralResult = await this.behavioralAnalysis.authenticate(user);
-        const environmentalResult = await this.environmentalAnalysis.authenticate(user);
+    async authenticateUser(user) {
+        const biometricAuthResult = await this.biometricAuth.authenticateUser(user);
+        const behavioralAnalysisResult = await this.behavioralAnalysis.analyzeUserBehavior(user);
+        const environmentalAnalysisResult = await this.environmentalAnalysis.analyzeEnvironment(user.environment);
 
-        return biometricResult && behavioralResult && environmentalResult;
+        if (biometricAuthResult && behavioralAnalysisResult && environmentalAnalysisResult) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    async monitorUser(user) {
+        await this.biometricAuth.enrollUser(user);
+        await this.behavioralAnalysis.updateBehaviorProfile(user);
+        await this.environmentalAnalysis.monitorEnvironment(user.environment);
     }
 }
 
